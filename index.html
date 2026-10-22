@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>For Khanyisile | A Special Journey</title>
+    <title>For Khanyisile | An Adventure Invitation</title>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -51,7 +51,7 @@
             line-height: 1.7;
         }
 
-        h1, h2, h3, .serif {
+        h1, h2, h3, h4, .serif {
             font-family: 'Cormorant Garamond', serif;
             font-weight: 300;
         }
@@ -81,9 +81,24 @@
             60% { transform: translateY(-5px); }
         }
 
-        .animate-fade-in { animation: fadeIn 2s forwards 0.5s; opacity: 0; }
-        .animate-fade-in-up { animation: fadeInUp 2s forwards 1s; opacity: 0; }
+        .animate-fade-in { animation: fadeIn 1.8s forwards 0.3s; opacity: 0; }
+        .animate-fade-in-up { animation: fadeInUp 1.8s forwards 0.6s; opacity: 0; }
         .scroll-indicator { animation: bounce 2s infinite; }
+
+        /* Floating particles for adventure section */
+        .sparkle {
+            position: absolute;
+            pointer-events: none;
+            background: radial-gradient(circle, rgba(197,163,116,0.8) 0%, rgba(226,182,177,0) 70%);
+            border-radius: 50%;
+            animation: floatUp 4s infinite linear;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0) scale(0.8); opacity: 0.2; }
+            50% { opacity: 0.8; }
+            100% { transform: translateY(-80px) scale(1.2); opacity: 0; }
+        }
     </style>
 </head>
 <body class="bg-[#FAF7F2] text-[#3D2B29] selection:bg-[#E2B6B1] selection:text-[#3D2B29]">
@@ -97,7 +112,7 @@
         <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif leading-[1.1] mb-6 animate-fade-in-up">
             Welcome to our story, <br><span class="italic text-deep-rose">Khanyisile.</span>
         </h1>
-        <div class="max-w-2xl mx-auto px-4 mt-4 animate-fade-in-up" style="animation-delay: 1.4s;">
+        <div class="max-w-2xl mx-auto px-4 mt-4 animate-fade-in-up" style="animation-delay: 1s;">
             <p class="text-lg md:text-xl font-serif text-text-main/90 italic">
                 "I created this quiet little corner of the world just for you. A place to pause, reflect, and hold close every beautiful heartbeat of what we share."
             </p>
@@ -107,42 +122,27 @@
         </div>
     </section>
 
-    <!-- Deep Feelings / Narrative Note -->
-    <section class="py-24 px-6 max-w-4xl mx-auto z-20 relative">
+    <!-- 2. Deep Feelings / Narrative Note -->
+    <section class="py-20 px-6 max-w-4xl mx-auto z-20 relative">
         <div class="bg-white/70 backdrop-blur-md p-8 md:p-14 rounded-3xl shadow-xl shadow-stone-200/50 border border-stone-100 text-center transition-all duration-700 hover:shadow-2xl">
             <span class="text-gold uppercase tracking-[0.2em] text-xs font-semibold block mb-3">From My Heart</span>
             <h2 class="text-3xl md:text-5xl font-serif mb-6">How You Illuminate My World</h2>
             <div class="space-y-6 text-base md:text-lg text-text-main/80 font-light leading-relaxed max-w-2xl mx-auto">
                 <p>
-                
 
-My love,
+You bring a kind of light into my life that makes even the simplest moments feel special. From your laughter to the little things that make you uniquely you, I find more reasons to appreciate you every day.<br><br>
 
-Sometimes I wonder if you truly understand the kind of light you bring into my world. It's not just in your smile, your laugh, or the way your eyes light up when you're happy. It's in the way your presence can make an ordinary day feel a little less ordinary, how a simple conversation with you can stay with me long after it's over, and how even the thought of seeing you can give me something beautiful to look forward to.<br><br>
+Thank you for your honesty, for opening up to me, and for allowing me to understand you on a deeper level. I value your willingness to have the conversations that help us grow, and I never want to take your trust or your presence in my life for granted.<br><br>
 
-Before you, I never really understood how one person could make such a difference without even trying. You don't have to do anything extraordinary. You don't have to have the perfect words or make every moment magical. Sometimes, it's simply you being you that makes everything feel a little brighter.<br><br>
 
-You illuminate the little corners of my world that I might otherwise overlook. You remind me that there is beauty in the smallest things, that happiness can live in a shared laugh, a quiet moment, a long conversation, or simply being beside someone who means something to you.<br><br>
-
-And if I could give you one thing, it would be the ability to see yourself through my eyes, even for a moment. I wish you could see how beautiful you are to me, not just in the ways the world might notice, but in all the little ways that make you *you*. I wish you could feel how much your presence matters, how deeply I appreciate the moments we share, and how much I look forward to all the moments we haven't experienced yet.<br><br>
-
-I don't need every day to be extraordinary. I just want more days where I get to discover another reason to smile because of you. More memories, more laughter, more little adventures, and more moments where the world slows down just enough for me to appreciate that I get to share a part of it with you.<br><br>
-
-You are not responsible for making my world beautiful, and I never want you to feel that you have to be anything other than yourself. But you have brought a kind of light into it that I wouldn't trade for anything.<br><br>
-
-And if life ever feels heavy, or if you ever forget just how special you are, I hope you remember this: somewhere in this world, there is someone who looks at you and sees so much more than words can explain.<br><br>
-
-You don't just brighten my days, my love. You illuminate my world in ways you may never fully realise. And one of my favourite things about life is knowing that there are still so many beautiful moments ahead of us, waiting to be shared.<br><br>
-
-With all my love,
-Always yours. ❤️
+You are someone I want to keep learning, growing, and creating beautiful memories with. And if there's one thing I hope you always know, it's that I appreciate you not only for how you make me feel, but for the wonderful person you are. ❤️
 
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- 2. Gallery Section -->
+    <!-- 3. Photo Gallery Section -->
     <section class="py-20 px-6 max-w-7xl mx-auto z-20 relative">
         <div class="text-center mb-16">
             <span class="text-gold uppercase tracking-[0.3em] text-xs block mb-2">Moments in Time</span>
@@ -150,42 +150,36 @@ Always yours. ❤️
         </div>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Gallery Item 1 -->
             <div class="bg-white p-4 pb-12 shadow-md hover:shadow-2xl transition-all duration-500 rounded-lg transform hover:-translate-y-2 hover:rotate-1 group">
                 <div class="overflow-hidden aspect-[4/5] bg-stone-100 mb-4 rounded">
                     <img src="herpictures/Khanyi 1.jpeg" alt="Memory 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x750/E2B6B1/3D2B29?text=Khanyisile+1'">
                 </div>
                 <p class="font-serif text-center text-sm tracking-widest text-deep-rose italic">Precious moments</p>
             </div>
-            <!-- Gallery Item 2 -->
             <div class="bg-white p-4 pb-12 shadow-md hover:shadow-2xl transition-all duration-500 rounded-lg transform sm:translate-y-6 hover:-translate-y-2 hover:-rotate-1 group">
                 <div class="overflow-hidden aspect-[4/5] bg-stone-100 mb-4 rounded">
                     <img src="herpictures/Khanyi 2.jpeg" alt="Memory 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x750/E2B6B1/3D2B29?text=Khanyisile+2'">
                 </div>
                 <p class="font-serif text-center text-sm tracking-widest text-deep-rose italic">Radiant smile</p>
             </div>
-            <!-- Gallery Item 3 -->
             <div class="bg-white p-4 pb-12 shadow-md hover:shadow-2xl transition-all duration-500 rounded-lg transform hover:-translate-y-2 hover:rotate-1 group">
                 <div class="overflow-hidden aspect-[4/5] bg-stone-100 mb-4 rounded">
                     <img src="herpictures/Khanyi 3.jpeg" alt="Memory 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x750/E2B6B1/3D2B29?text=Khanyisile+3'">
                 </div>
                 <p class="font-serif text-center text-sm tracking-widest text-deep-rose italic">Unforgettable days</p>
             </div>
-            <!-- Gallery Item 4 -->
             <div class="bg-white p-4 pb-12 shadow-md hover:shadow-2xl transition-all duration-500 rounded-lg transform sm:translate-y-6 hover:-translate-y-2 hover:-rotate-1 group">
                 <div class="overflow-hidden aspect-[4/5] bg-stone-100 mb-4 rounded">
                     <img src="herpictures/Khanyi 4.jpeg" alt="Memory 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x750/E2B6B1/3D2B29?text=Khanyisile+4'">
                 </div>
                 <p class="font-serif text-center text-sm tracking-widest text-deep-rose italic">Pure elegance</p>
             </div>
-            <!-- Gallery Item 5 -->
             <div class="bg-white p-4 pb-12 shadow-md hover:shadow-2xl transition-all duration-500 rounded-lg transform hover:-translate-y-2 hover:rotate-1 group">
                 <div class="overflow-hidden aspect-[4/5] bg-stone-100 mb-4 rounded">
                     <img src="herpictures/Khanyi 5.jpeg" alt="Memory 5" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x750/E2B6B1/3D2B29?text=Khanyisile+5'">
                 </div>
                 <p class="font-serif text-center text-sm tracking-widest text-deep-rose italic">Endless warmth</p>
             </div>
-            <!-- Gallery Item 6 -->
             <div class="bg-white p-4 pb-12 shadow-md hover:shadow-2xl transition-all duration-500 rounded-lg transform sm:translate-y-6 hover:-translate-y-2 hover:-rotate-1 group">
                 <div class="overflow-hidden aspect-[4/5] bg-stone-100 mb-4 rounded">
                     <img src="herpictures/Khanyi 6.jpeg" alt="Memory 6" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x750/E2B6B1/3D2B29?text=Khanyisile+6'">
@@ -195,10 +189,9 @@ Always yours. ❤️
         </div>
     </section>
 
-    <!-- 3. Curated Apple Music Playlist Section -->
+    <!-- 4. Curated Apple Music Playlist Section -->
     <section class="py-20 px-6 max-w-4xl mx-auto z-20 relative">
         <div class="bg-gradient-to-br from-stone-900 to-stone-800 text-cream rounded-3xl p-8 md:p-14 shadow-2xl relative overflow-hidden text-center">
-            <!-- Decorative blur orb -->
             <div class="absolute -right-20 -top-20 w-64 h-64 bg-deep-rose/30 rounded-full blur-3xl pointer-events-none"></div>
             
             <span class="text-gold uppercase tracking-[0.25em] text-xs font-medium block mb-3">A Curated Soundtrack</span>
@@ -208,7 +201,6 @@ Always yours. ❤️
             </p>
 
             <a href="https://music.apple.com/za/playlist/a-piece-of-me-to-you/pl.u-11zBX4muN08aDyy" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#fa243c] hover:bg-[#e01b33] text-white uppercase tracking-widest text-xs font-semibold shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <!-- Apple Music Icon SVG -->
                 <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                     <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.328 13.974c-.58.337-1.488.528-2.435.528-2.222 0-3.793-1.341-3.793-3.692 0-2.31 1.637-3.766 3.905-3.766.902 0 1.705.176 2.235.485v1.64c-.496-.282-1.205-.443-1.93-.443-1.24 0-2.072.783-2.072 2.052 0 1.258.85 2.023 2.115 2.023.702 0 1.348-.157 1.88-.445v1.618z"/>
                 </svg>
@@ -217,52 +209,136 @@ Always yours. ❤️
         </div>
     </section>
 
-    <!-- 4. The Big Reveal & Live Countdown Section -->
-    <section class="py-24 px-6 max-w-4xl mx-auto z-20 relative text-center">
-        <div class="bg-white/80 backdrop-blur-md p-10 md:p-16 rounded-3xl shadow-xl border border-stone-200">
-            <span class="text-gold uppercase tracking-[0.3em] text-xs font-semibold block mb-3">Mark Your Calendar</span>
-            <h2 class="text-3xl md:text-5xl font-serif mb-4">Prepare Yourself for the Big News</h2>
-            <p class="text-stone-600 max-w-xl mx-auto mb-10 text-base md:text-lg font-light">
-                Something truly special is awaiting us. Get ready for an unforgettable announcement shared with you on <span class="font-medium text-text-main">Friday, the 23rd of October, 2026</span>.
-            </p>
+    <!-- 5. THE ADVENTURE INVITATION (4 STAGES) -->
+    <section id="adventure-section" class="py-24 px-6 max-w-4xl mx-auto z-20 relative">
+        <div class="bg-white/85 backdrop-blur-md p-8 md:p-16 rounded-3xl shadow-xl border border-stone-200/80 transition-all duration-700 relative overflow-hidden">
+            
+            <!-- STAGE 1: THE ANTICIPATION -->
+            <div id="adventure-stage-1" class="text-center py-6">
+                <span class="text-gold uppercase tracking-[0.3em] text-xs font-semibold block mb-4">A Next Chapter</span>
+                <h3 class="text-3xl md:text-5xl font-serif text-text-main mb-8 leading-tight">
+                    There's something I've been wanting to ask you…
+                </h3>
+                <button onclick="goToStage(2)" class="px-9 py-4 rounded-full bg-deep-rose text-white uppercase tracking-widest text-xs font-medium shadow-lg hover:bg-rose-700 hover:-translate-y-1 transition-all">
+                    Discover Your Surprise
+                </button>
+            </div>
 
-            <!-- Countdown Timer Grid -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-xl mx-auto mb-12">
-                <div class="bg-cream p-4 rounded-2xl border border-stone-200 shadow-inner">
-                    <span id="days" class="text-3xl md:text-4xl font-serif text-deep-rose font-bold block">00</span>
-                    <span class="text-xs uppercase tracking-wider text-stone-500">Days</span>
+            <!-- STAGE 2: THE PERSONAL MESSAGE -->
+            <div id="adventure-stage-2" class="hidden text-center transition-all duration-700">
+                <span class="text-gold uppercase tracking-[0.3em] text-xs font-semibold block mb-4">Just Between Us</span>
+                <div class="max-w-2xl mx-auto text-left sm:text-center space-y-5 text-text-main/90 font-light text-base md:text-lg leading-relaxed mb-10">
+                    <p class="font-serif italic text-2xl text-deep-rose text-center mb-6">My love,</p>
+                    <p>
+                        Life gets busy, days come and go, and sometimes we get caught up in everything happening around us. But amidst it all, there's something I never want us to forget: making time for each other, creating memories, and giving ourselves little moments that belong only to us.
+                    </p>
+                    <p>
+                        So, I've been planning something.
+                    </p>
+                    <p>
+                        Nothing you need to organise. Nothing you need to figure out. Just an opportunity for you and me to step away from the usual, enjoy each other's company, and make a memory we can look back on with a smile.
+                    </p>
+                    <p>
+                        I've kept a few things a secret because I want you to experience this one little surprise as it unfolds.
+                    </p>
+                    <p class="font-medium text-text-main pt-2">
+                        But before I reveal anything else, there's one thing I need to ask you…
+                    </p>
                 </div>
-                <div class="bg-cream p-4 rounded-2xl border border-stone-200 shadow-inner">
-                    <span id="hours" class="text-3xl md:text-4xl font-serif text-deep-rose font-bold block">00</span>
-                    <span class="text-xs uppercase tracking-wider text-stone-500">Hours</span>
+                <button onclick="goToStage(3)" class="px-8 py-4 rounded-full bg-deep-rose text-white uppercase tracking-widest text-xs font-medium shadow-lg hover:bg-rose-700 hover:-translate-y-1 transition-all">
+                    There's Something I Want to Ask You
+                </button>
+            </div>
+
+            <!-- STAGE 3: THE GRAND INVITATION REVEAL -->
+            <div id="adventure-stage-3" class="hidden text-center transition-all duration-700">
+                <div class="inline-block border-y border-gold/40 py-3 px-8 mb-6">
+                    <p class="text-xs tracking-[0.4em] uppercase text-gold font-semibold mb-1">05 · 12 · 2026</p>
+                    <p class="text-sm font-serif tracking-widest text-stone-600">SATURDAY, 5 DECEMBER 2026</p>
                 </div>
-                <div class="bg-cream p-4 rounded-2xl border border-stone-200 shadow-inner">
-                    <span id="minutes" class="text-3xl md:text-4xl font-serif text-deep-rose font-bold block">00</span>
-                    <span class="text-xs uppercase tracking-wider text-stone-500">Minutes</span>
+
+                <h2 class="text-4xl md:text-6xl font-serif text-deep-rose mb-6">An Adventure With You</h2>
+
+                <div class="max-w-xl mx-auto space-y-4 text-text-main/80 font-light text-base md:text-lg leading-relaxed mb-8">
+                    <p>
+                        My love, I'd love to steal you away for a day that's just ours.
+                    </p>
+                    <p>
+                        A little adventure, a change of scenery, beautiful memories, and time for just you and me.
+                    </p>
+                    <p>
+                        The details can remain a little mystery for now, but there's one thing I know for certain: I'd love to experience it with you.
+                    </p>
+                    <p class="font-serif italic text-xl text-gold pt-2">So, my love…</p>
                 </div>
-                <div class="bg-cream p-4 rounded-2xl border border-stone-200 shadow-inner">
-                    <span id="seconds" class="text-3xl md:text-4xl font-serif text-deep-rose font-bold block">00</span>
-                    <span class="text-xs uppercase tracking-wider text-stone-500">Seconds</span>
+
+                <h3 class="text-3xl md:text-5xl font-serif text-text-main font-normal tracking-wide mb-10 leading-snug">
+                    WILL YOU COME ON AN ADVENTURE WITH ME?
+                </h3>
+
+                <!-- STAGE 4: RESPONSE OPTIONS -->
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <button onclick="acceptAdventure()" class="w-full sm:w-auto px-8 py-4 rounded-full bg-deep-rose text-white uppercase tracking-widest text-xs font-medium shadow-xl hover:bg-rose-700 hover:-translate-y-1 transition-all">
+                        YES, MY LOVE ❤️
+                    </button>
+                    <button onclick="openMoreDetailsModal()" class="w-full sm:w-auto px-8 py-4 rounded-full bg-soft-rose/80 hover:bg-soft-rose text-text-main uppercase tracking-widest text-xs font-medium shadow-md transition-all">
+                        Tell Me a Little More…
+                    </button>
                 </div>
             </div>
 
-            <!-- Valentine Question Trigger -->
-            <div class="pt-6 border-t border-stone-200">
-                <h3 class="text-2xl md:text-3xl font-serif mb-6">Khanyisile, will you go on this adventure with me?</h3>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <button onclick="triggerCelebration()" class="px-8 py-4 rounded-full bg-deep-rose text-white uppercase tracking-widest text-xs font-medium shadow-lg hover:bg-rose-700 hover:-translate-y-1 transition-all">
-                        Yes, I'd love to ❤️
-                    </button>
-                    <button id="btn-move" class="px-8 py-4 rounded-full bg-soft-rose text-text-main uppercase tracking-widest text-xs font-medium shadow-md transition-all">
-                        Yes (Obviously)
-                    </button>
+            <!-- STAGE 4 CONFIRMATION & COUNTDOWN -->
+            <div id="adventure-stage-confirmation" class="hidden text-center transition-all duration-700">
+                <div class="text-center">
+                    <span class="text-4xl mb-2 block">✨ ❤️ ✨</span>
+                    <h3 class="text-3xl md:text-5xl font-serif text-deep-rose mb-4">YOU'VE MADE ME SO HAPPY. ❤️</h3>
+                    <p class="text-gold uppercase tracking-[0.2em] text-xs font-semibold mb-6">It's a date, my love!</p>
+                    
+                    <div class="max-w-xl mx-auto space-y-4 text-text-main/80 font-light text-base md:text-lg mb-10">
+                        <p>
+                            Saturday, 5 December 2026 is officially our little adventure day.
+                        </p>
+                        <p>
+                            The destination and details can stay a secret a little longer, but I cannot wait to make another beautiful memory with you.
+                        </p>
+                        <p class="italic font-serif text-xl text-deep-rose">
+                            Until then, keep a little space in your heart for something special.
+                        </p>
+                        <p class="text-sm font-medium tracking-wider text-stone-500 uppercase">
+                            Love always, your favourite person.
+                        </p>
+                    </div>
+
+                    <!-- Live Countdown to Saturday, 5 December 2026 (09:00 SAST) -->
+                    <div class="pt-8 border-t border-stone-200">
+                        <span class="text-xs uppercase tracking-[0.3em] text-gold font-semibold block mb-4">Countdown to Our Adventure</span>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-xl mx-auto">
+                            <div class="bg-cream p-4 rounded-2xl border border-stone-200 shadow-inner">
+                                <span id="adv-days" class="text-3xl md:text-4xl font-serif text-deep-rose font-bold block">00</span>
+                                <span class="text-xs uppercase tracking-wider text-stone-500">Days</span>
+                            </div>
+                            <div class="bg-cream p-4 rounded-2xl border border-stone-200 shadow-inner">
+                                <span id="adv-hours" class="text-3xl md:text-4xl font-serif text-deep-rose font-bold block">00</span>
+                                <span class="text-xs uppercase tracking-wider text-stone-500">Hours</span>
+                            </div>
+                            <div class="bg-cream p-4 rounded-2xl border border-stone-200 shadow-inner">
+                                <span id="adv-minutes" class="text-3xl md:text-4xl font-serif text-deep-rose font-bold block">00</span>
+                                <span class="text-xs uppercase tracking-wider text-stone-500">Minutes</span>
+                            </div>
+                            <div class="bg-cream p-4 rounded-2xl border border-stone-200 shadow-inner">
+                                <span id="adv-seconds" class="text-3xl md:text-4xl font-serif text-deep-rose font-bold block">00</span>
+                                <span class="text-xs uppercase tracking-wider text-stone-500">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- 5. Interactive Game Section -->
-    <section class="py-24 px-6 max-w-4xl mx-auto z-20 relative">
+    <!-- 6. Interactive Memory Game Section -->
+    <section class="py-20 px-6 max-w-4xl mx-auto z-20 relative">
         <div class="bg-white/90 backdrop-blur-md p-8 md:p-12 rounded-3xl shadow-xl border border-stone-200 text-center">
             <span class="text-gold uppercase tracking-[0.3em] text-xs font-semibold block mb-3">Play Together</span>
             <h2 class="text-3xl md:text-4xl font-serif mb-3">Our Love Memory Match</h2>
@@ -270,12 +346,10 @@ Always yours. ❤️
                 Test your memory! Match the romantic icons to unlock a special secret note just for you.
             </p>
 
-            <!-- Game Board -->
             <div id="memory-game" class="grid grid-cols-4 gap-3 sm:gap-4 max-w-md mx-auto mb-6">
                 <!-- Cards generated via JS -->
             </div>
 
-            <!-- Game Status & Reset -->
             <div class="flex justify-between items-center max-w-md mx-auto px-2">
                 <p id="game-status" class="text-sm font-medium text-deep-rose">Matches: <span id="match-count">0</span> / 4</p>
                 <button onclick="initGame()" class="px-4 py-2 bg-stone-100 hover:bg-stone-200 text-stone-700 rounded-xl text-xs uppercase tracking-wider transition-colors font-medium">
@@ -287,24 +361,32 @@ Always yours. ❤️
 
     <!-- Footer -->
     <footer class="py-12 text-center text-xs tracking-widest text-stone-500 uppercase z-20 relative border-t border-stone-200/60">
-        <p>Made with infinite love for Khanyisile By Mpumelelo Hlongwane • October 2026</p>
+        <p>Made with infinite love for Khanyisile, DESIGNED BY MPUMELELO HLONGWANE</p>
     </footer>
 
-    <!-- Success Celebration Overlay -->
-    <div id="overlay" class="fixed inset-0 bg-cream/95 backdrop-blur-md z-50 hidden flex-col justify-center items-center text-center p-6 opacity-0 transition-opacity duration-700">
-        <h3 class="text-4xl md:text-6xl font-serif mb-4 text-deep-rose">I can't wait for the 23rd.</h3>
-        <p class="text-gold uppercase tracking-[0.3em] text-sm mb-8 font-medium">You made me the happiest person in the world</p>
-        <button onclick="closeCelebration()" class="px-8 py-3 rounded-full bg-deep-rose text-white uppercase tracking-widest text-xs font-medium shadow-lg hover:bg-rose-700 transition-all">
-            Continue Our Journey
-        </button>
+    <!-- Modal for 'Tell Me a Little More...' Response -->
+    <div id="details-modal" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 hidden flex justify-center items-center p-4">
+        <div class="bg-white p-8 md:p-10 rounded-3xl shadow-2xl max-w-md w-full text-center border border-stone-100 animate-fade-in-up">
+            <span class="text-3xl mb-2 block">✨ ❤️</span>
+            <h4 class="text-2xl font-serif mb-4 text-deep-rose">Oh, my love, curious already? ❤️</h4>
+            <div class="text-stone-600 text-sm md:text-base space-y-3 mb-6 font-light leading-relaxed">
+                <p>I could tell you everything, but where would the fun be in that?</p>
+                <p>All you need to know for now is that I want us to have a day to remember.</p>
+                <p>The rest? You'll have to wait and see.</p>
+                <p class="font-medium text-text-main pt-2">So, what do you say? Will you let me take you on this little adventure?</p>
+            </div>
+            <button onclick="closeDetailsModal()" class="w-full py-3.5 bg-deep-rose text-white rounded-full uppercase tracking-wider text-xs font-medium shadow-md hover:bg-rose-700 transition-colors">
+                Back to the Question ❤️
+            </button>
+        </div>
     </div>
 
-    <!-- Custom Message Modal (Replaces alert) -->
+    <!-- Custom Message Modal for Game -->
     <div id="modal" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 hidden flex justify-center items-center p-4">
         <div class="bg-white p-8 rounded-3xl shadow-2xl max-w-sm w-full text-center border border-stone-100 animate-fade-in-up">
             <h4 id="modal-title" class="text-2xl font-serif mb-2 text-deep-rose">A Note For You</h4>
             <p id="modal-message" class="text-stone-600 text-sm mb-6 leading-relaxed">You successfully matched all the memories!</p>
-            <button onclick="closeModal()" class="w-full py-3 bg-deep-rose text-white rounded-xl uppercase tracking-wider text-xs font-medium shadow-md hover:bg-rose-700 transition-colors">
+            <button onclick="closeModal()" class="w-full py-3 bg-deep-rose text-white rounded-full uppercase tracking-wider text-xs font-medium shadow-md hover:bg-rose-700 transition-colors">
                 Wonderful
             </button>
         </div>
@@ -312,7 +394,7 @@ Always yours. ❤️
 
     <!-- JavaScript Application Logic -->
     <script>
-        // --- 1. Petal Rain Canvas Effect ---
+        // --- 1. Falling Petal Canvas Background Effect ---
         const canvas = document.getElementById('petal-canvas');
         const ctx = canvas.getContext('2d');
         let petals = [];
@@ -361,18 +443,57 @@ Always yours. ❤️
         }
         animatePetals();
 
-        // --- 2. Live Countdown to October 23, 2026 ---
-        const targetDate = new Date('October 23, 2026 00:00:00').getTime();
+        // --- 2. Adventure Invitation Stage Transitions ---
+        function goToStage(stageNum) {
+            document.getElementById('adventure-stage-1').classList.add('hidden');
+            document.getElementById('adventure-stage-2').classList.add('hidden');
+            document.getElementById('adventure-stage-3').classList.add('hidden');
+            document.getElementById('adventure-stage-confirmation').classList.add('hidden');
 
-        function updateCountdown() {
+            const nextStage = document.getElementById(`adventure-stage-${stageNum}`);
+            if (nextStage) {
+                nextStage.classList.remove('hidden');
+                // Scroll smoothly to section center
+                document.getElementById('adventure-section').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        function openMoreDetailsModal() {
+            document.getElementById('details-modal').style.display = 'flex';
+        }
+
+        function closeDetailsModal() {
+            document.getElementById('details-modal').style.display = 'none';
+        }
+
+        function acceptAdventure() {
+            document.getElementById('adventure-stage-3').classList.add('hidden');
+            const confirmStage = document.getElementById('adventure-stage-confirmation');
+            confirmStage.classList.remove('hidden');
+
+            // Burst of petals
+            for (let i = 0; i < 80; i++) petals.push(new Petal());
+
+            // Start adventure countdown
+            startAdventureCountdown();
+
+            document.getElementById('adventure-section').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // --- 3. Live Countdown to Saturday, 5 December 2026 (09:00 SAST / UTC+2) ---
+        const adventureTargetDate = new Date('2026-12-05T09:00:00+02:00').getTime();
+        let adventureTimerInterval = null;
+
+        function updateAdventureCountdown() {
             const now = new Date().getTime();
-            const difference = targetDate - now;
+            const difference = adventureTargetDate - now;
 
-            if (difference < 0) {
-                document.getElementById('days').textContent = '00';
-                document.getElementById('hours').textContent = '00';
-                document.getElementById('minutes').textContent = '00';
-                document.getElementById('seconds').textContent = '00';
+            if (difference <= 0) {
+                document.getElementById('adv-days').textContent = '00';
+                document.getElementById('adv-hours').textContent = '00';
+                document.getElementById('adv-minutes').textContent = '00';
+                document.getElementById('adv-seconds').textContent = '00';
+                if (adventureTimerInterval) clearInterval(adventureTimerInterval);
                 return;
             }
 
@@ -381,39 +502,22 @@ Always yours. ❤️
             const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-            document.getElementById('days').textContent = String(days).padStart(2, '0');
-            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-        }
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-
-        // --- 3. Celebration & "No" Button Evasion ---
-        function triggerCelebration() {
-            const overlay = document.getElementById('overlay');
-            overlay.style.display = 'flex';
-            setTimeout(() => overlay.style.opacity = '1', 50);
-            for (let i = 0; i < 100; i++) petals.push(new Petal());
+            document.getElementById('adv-days').textContent = String(days).padStart(2, '0');
+            document.getElementById('adv-hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('adv-minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('adv-seconds').textContent = String(seconds).padStart(2, '0');
         }
 
-        function closeCelebration() {
-            const overlay = document.getElementById('overlay');
-            overlay.style.opacity = '0';
-            setTimeout(() => overlay.style.display = 'none', 700);
-        }
-
-        const moveBtn = document.getElementById('btn-move');
-        moveBtn.addEventListener('mouseover', () => {
-            if (window.innerWidth > 768) {
-                moveBtn.style.transform = `translate(${Math.random() * 120 - 60}px, ${Math.random() * 60 - 30}px)`;
+        function startAdventureCountdown() {
+            updateAdventureCountdown();
+            if (!adventureTimerInterval) {
+                adventureTimerInterval = setInterval(updateAdventureCountdown, 1000);
             }
-        });
-        moveBtn.addEventListener('click', triggerCelebration);
+        }
 
         // --- 4. Interactive Memory Match Game ---
         const emojis = ['🌹', '❤️', '✨', '💌'];
-        let cardArray = [...emojis, ...emojis]; // 8 cards total (4 pairs)
+        let cardArray = [...emojis, ...emojis];
         let flippedCards = [];
         let matchedPairs = 0;
         let lockBoard = false;
@@ -426,7 +530,6 @@ Always yours. ❤️
             flippedCards = [];
             lockBoard = false;
 
-            // Shuffle cards
             cardArray.sort(() => 0.5 - Math.random());
 
             cardArray.forEach((symbol, index) => {
