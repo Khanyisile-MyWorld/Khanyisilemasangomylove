@@ -85,19 +85,23 @@
         .animate-fade-in-up { animation: fadeInUp 1.8s forwards 0.6s; opacity: 0; }
         .scroll-indicator { animation: bounce 2s infinite; }
 
-        /* Floating particles for adventure section */
-        .sparkle {
-            position: absolute;
-            pointer-events: none;
-            background: radial-gradient(circle, rgba(197,163,116,0.8) 0%, rgba(226,182,177,0) 70%);
-            border-radius: 50%;
-            animation: floatUp 4s infinite linear;
+        .memory-card {
+            aspect-ratio: 1;
+            background: #ffffff;
+            border-radius: 0.75rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border: 1px solid #E2B6B1;
+            user-select: none;
+            transition: transform 0.3s;
         }
 
-        @keyframes floatUp {
-            0% { transform: translateY(0) scale(0.8); opacity: 0.2; }
-            50% { opacity: 0.8; }
-            100% { transform: translateY(-80px) scale(1.2); opacity: 0; }
+        .memory-card.flipped {
+            background: #FAF7F2;
         }
     </style>
 </head>
@@ -129,14 +133,9 @@
             <h2 class="text-3xl md:text-5xl font-serif mb-6">How You Illuminate My World</h2>
             <div class="space-y-6 text-base md:text-lg text-text-main/80 font-light leading-relaxed max-w-2xl mx-auto">
                 <p>
-
-You bring a kind of light into my life that makes even the simplest moments feel special. From your laughter to the little things that make you uniquely you, I find more reasons to appreciate you every day.<br><br>
-
-Thank you for your honesty, for opening up to me, and for allowing me to understand you on a deeper level. I value your willingness to have the conversations that help us grow, and I never want to take your trust or your presence in my life for granted.<br><br>
-
-
-You are someone I want to keep learning, growing, and creating beautiful memories with. And if there's one thing I hope you always know, it's that I appreciate you not only for how you make me feel, but for the wonderful person you are. ❤️
-
+                    You bring a kind of light into my life that makes even the simplest moments feel special. From your laughter to the little things that make you uniquely you, I find more reasons to appreciate you every day.<br><br>
+                    Thank you for your honesty, for opening up to me, and for allowing me to understand you on a deeper level. I value your willingness to have the conversations that help us grow, and I never want to take your trust or your presence in my life for granted.<br><br>
+                    You are someone I want to keep learning, growing, and creating beautiful memories with. And if there's one thing I hope you always know, it's that I appreciate you not only for how you make me feel, but for the wonderful person you are. ❤️
                 </p>
             </div>
         </div>
@@ -185,6 +184,48 @@ You are someone I want to keep learning, growing, and creating beautiful memorie
                     <img src="herpictures/Khanyi 6.jpeg" alt="Memory 6" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x750/E2B6B1/3D2B29?text=Khanyisile+6'">
                 </div>
                 <p class="font-serif text-center text-sm tracking-widest text-deep-rose italic">My favorite person</p>
+            </div>
+            <div class="bg-white p-4 pb-12 shadow-md hover:shadow-2xl transition-all duration-500 rounded-lg transform hover:-translate-y-2 hover:rotate-1 group">
+                <div class="overflow-hidden aspect-[4/5] bg-stone-100 mb-4 rounded">
+                    <img src="herpictures/Khanyi 7.jpeg" alt="Memory 7" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x750/E2B6B1/3D2B29?text=Khanyisile+7'">
+                </div>
+                <p class="font-serif text-center text-sm tracking-widest text-deep-rose italic">My Permanent Plus One</p>
+            </div>
+            <div class="bg-white p-4 pb-12 shadow-md hover:shadow-2xl transition-all duration-500 rounded-lg transform hover:-translate-y-2 hover:rotate-1 group">
+                <div class="overflow-hidden aspect-[4/5] bg-stone-100 mb-4 rounded">
+                    <img src="herpictures/Khanyi 8.jpeg" alt="Memory 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x750/E2B6B1/3D2B29?text=Khanyisile+8'">
+                </div>
+                <p class="font-serif text-center text-sm tracking-widest text-deep-rose italic">Two Souls one story!</p>
+            </div>
+            <div class="bg-white p-4 pb-12 shadow-md hover:shadow-2xl transition-all duration-500 rounded-lg transform hover:-translate-y-2 hover:rotate-1 group">
+                <div class="overflow-hidden aspect-[4/5] bg-stone-100 mb-4 rounded">
+                    <img src="herpictures/Khanyi 9.jpeg" alt="Memory 9" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x750/E2B6B1/3D2B29?text=Khanyisile+9'">
+                </div>
+                <p class="font-serif text-center text-sm tracking-widest text-deep-rose italic">Home is wherever I'm with you</p>
+            </div>
+            <div class="bg-white p-4 pb-12 shadow-md hover:shadow-2xl transition-all duration-500 rounded-lg transform hover:-translate-y-2 hover:rotate-1 group">
+                <div class="overflow-hidden aspect-[4/5] bg-stone-100 mb-4 rounded">
+                    <img src="herpictures/Khanyi 10.jpeg" alt="Memory 10" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x750/E2B6B1/3D2B29?text=Khanyisile+10'">
+                </div>
+                <p class="font-serif text-center text-sm tracking-widest text-deep-rose italic">Not to brag, but i think we're really cute</p>
+            </div>
+            <div class="bg-white p-4 pb-12 shadow-md hover:shadow-2xl transition-all duration-500 rounded-lg transform hover:-translate-y-2 hover:rotate-1 group">
+                <div class="overflow-hidden aspect-[4/5] bg-stone-100 mb-4 rounded">
+                    <img src="herpictures/Khanyi 11.jpeg" alt="Memory 11" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x750/E2B6B1/3D2B29?text=Khanyisile+11'">
+                </div>
+                <p class="font-serif text-center text-sm tracking-widest text-deep-rose italic">Would You Mind</p>
+            </div>
+            <div class="bg-white p-4 pb-12 shadow-md hover:shadow-2xl transition-all duration-500 rounded-lg transform hover:-translate-y-2 hover:rotate-1 group">
+                <div class="overflow-hidden aspect-[4/5] bg-stone-100 mb-4 rounded">
+                    <img src="herpictures/Khanyi 12.png" alt="Memory 12" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x750/E2B6B1/3D2B29?text=Khanyisile+12'">
+                </div>
+                <p class="font-serif text-center text-sm tracking-widest text-deep-rose italic">Can't keep our hands to ourselves</p>
+            </div>
+            <div class="bg-white p-4 pb-12 shadow-md hover:shadow-2xl transition-all duration-500 rounded-lg transform hover:-translate-y-2 hover:rotate-1 group">
+                <div class="overflow-hidden aspect-[4/5] bg-stone-100 mb-4 rounded">
+                    <img src="herpictures/Khanyi 13.jpeg" alt="Memory 13" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x750/E2B6B1/3D2B29?text=Khanyisile+13'">
+                </div>
+                <p class="font-serif text-center text-sm tracking-widest text-deep-rose italic">Match Stick mina, Match Box yena, Nasha nina!!</p>
             </div>
         </div>
     </section>
@@ -272,11 +313,22 @@ You are someone I want to keep learning, growing, and creating beautiful memorie
                     <p class="font-serif italic text-xl text-gold pt-2">So, my love…</p>
                 </div>
 
+                <!-- SECRET PASSCODE & HINT UNLOCK SECTION -->
+                <div class="my-8 p-6 bg-[#FAF7F2] border border-soft-rose rounded-2xl max-w-md mx-auto shadow-inner text-center">
+                    <p class="text-xs uppercase tracking-[0.2em] text-gold font-semibold mb-1">🔐 Secret Activity Unlock</p>
+                    <p class="text-sm text-stone-600 mb-4 font-light">Enter the secret phrase to reveal a hint about our first task:</p>
+                    <input type="text" id="passcode-input" placeholder="ENTER SECRET CODE" class="w-full px-4 py-3 rounded-full border border-gold text-center text-xs tracking-widest uppercase outline-none focus:border-deep-rose transition-colors bg-white mb-3">
+                    <button onclick="checkPasscode()" class="px-6 py-2.5 rounded-full bg-deep-rose text-white uppercase tracking-widest text-xs font-medium hover:bg-rose-700 transition-all shadow-md">
+                        Unlock Hint
+                    </button>
+                    <p id="passcode-error" class="text-xs text-deep-rose mt-2 min-h-[1.25rem] font-medium"></p>
+                </div>
+
                 <h3 class="text-3xl md:text-5xl font-serif text-text-main font-normal tracking-wide mb-10 leading-snug">
                     WILL YOU COME ON AN ADVENTURE WITH ME?
                 </h3>
 
-                <!-- STAGE 4: RESPONSE OPTIONS -->
+                <!-- RESPONSE OPTIONS -->
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
                     <button onclick="acceptAdventure()" class="w-full sm:w-auto px-8 py-4 rounded-full bg-deep-rose text-white uppercase tracking-widest text-xs font-medium shadow-xl hover:bg-rose-700 hover:-translate-y-1 transition-all">
                         YES, MY LOVE ❤️
@@ -381,6 +433,22 @@ You are someone I want to keep learning, growing, and creating beautiful memorie
         </div>
     </div>
 
+    <!-- Modal for Secret Passcode Hint Reveal -->
+    <div id="hint-modal" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 hidden flex justify-center items-center p-4">
+        <div class="bg-white p-8 md:p-10 rounded-3xl shadow-2xl max-w-md w-full text-center border border-stone-100 animate-fade-in-up">
+            <span class="text-4xl mb-2 block">🥾 🌲</span>
+            <h4 class="text-3xl font-serif mb-4 text-deep-rose">First Activity Unlocked!</h4>
+            <div class="text-stone-600 text-sm md:text-base space-y-4 mb-6 font-light leading-relaxed">
+                <p>Get your favorite comfortable shoes ready, Khanyisile!</p>
+                <p>Our adventure starts in nature with a breathtaking <strong>Hiking</strong> session.</p>
+                <p class="font-medium text-text-main">Be prepared for fresh air, beautiful views, and a lovely start to our special day together! ❤️</p>
+            </div>
+            <button onclick="closeHintModal()" class="w-full py-3.5 bg-deep-rose text-white rounded-full uppercase tracking-wider text-xs font-medium shadow-md hover:bg-rose-700 transition-colors">
+                Got It, My Love!
+            </button>
+        </div>
+    </div>
+
     <!-- Custom Message Modal for Game -->
     <div id="modal" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 hidden flex justify-center items-center p-4">
         <div class="bg-white p-8 rounded-3xl shadow-2xl max-w-sm w-full text-center border border-stone-100 animate-fade-in-up">
@@ -453,146 +521,138 @@ You are someone I want to keep learning, growing, and creating beautiful memorie
             const nextStage = document.getElementById(`adventure-stage-${stageNum}`);
             if (nextStage) {
                 nextStage.classList.remove('hidden');
-                // Scroll smoothly to section center
-                document.getElementById('adventure-section').scrollIntoView({ behavior: 'smooth', block: 'center' });
+                document.getElementById('adventure-section').scrollIntoView({ behavior: 'smooth' });
             }
-        }
-
-        function openMoreDetailsModal() {
-            document.getElementById('details-modal').style.display = 'flex';
-        }
-
-        function closeDetailsModal() {
-            document.getElementById('details-modal').style.display = 'none';
         }
 
         function acceptAdventure() {
-            document.getElementById('adventure-stage-3').classList.add('hidden');
-            const confirmStage = document.getElementById('adventure-stage-confirmation');
-            confirmStage.classList.remove('hidden');
-
-            // Burst of petals
-            for (let i = 0; i < 80; i++) petals.push(new Petal());
-
-            // Start adventure countdown
-            startAdventureCountdown();
-
-            document.getElementById('adventure-section').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            goToStage('confirmation');
+            startCountdown();
+            for (let i = 0; i < 40; i++) petals.push(new Petal());
         }
 
-        // --- 3. Live Countdown to Saturday, 5 December 2026 (09:00 SAST / UTC+2) ---
-        const adventureTargetDate = new Date('2026-12-05T09:00:00+02:00').getTime();
-        let adventureTimerInterval = null;
-
-        function updateAdventureCountdown() {
-            const now = new Date().getTime();
-            const difference = adventureTargetDate - now;
-
-            if (difference <= 0) {
-                document.getElementById('adv-days').textContent = '00';
-                document.getElementById('adv-hours').textContent = '00';
-                document.getElementById('adv-minutes').textContent = '00';
-                document.getElementById('adv-seconds').textContent = '00';
-                if (adventureTimerInterval) clearInterval(adventureTimerInterval);
-                return;
-            }
-
-            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-            document.getElementById('adv-days').textContent = String(days).padStart(2, '0');
-            document.getElementById('adv-hours').textContent = String(hours).padStart(2, '0');
-            document.getElementById('adv-minutes').textContent = String(minutes).padStart(2, '0');
-            document.getElementById('adv-seconds').textContent = String(seconds).padStart(2, '0');
+        function openMoreDetailsModal() {
+            document.getElementById('details-modal').classList.remove('hidden');
         }
 
-        function startAdventureCountdown() {
-            updateAdventureCountdown();
-            if (!adventureTimerInterval) {
-                adventureTimerInterval = setInterval(updateAdventureCountdown, 1000);
+        function closeDetailsModal() {
+            document.getElementById('details-modal').classList.add('hidden');
+        }
+
+        // --- 3. Secret Passcode System ---
+        function checkPasscode() {
+            const inputVal = document.getElementById('passcode-input').value.trim().toUpperCase();
+            const errorElement = document.getElementById('passcode-error');
+
+            if (inputVal === 'I LOVE YOU DOWN') {
+                errorElement.textContent = '';
+                document.getElementById('hint-modal').classList.remove('hidden');
+            } else {
+                errorElement.textContent = 'Incorrect passcode, my love. Try again!';
             }
         }
 
-        // --- 4. Interactive Memory Match Game ---
-        const emojis = ['🌹', '❤️', '✨', '💌'];
-        let cardArray = [...emojis, ...emojis];
+        function closeHintModal() {
+            document.getElementById('hint-modal').classList.add('hidden');
+        }
+
+        // --- 4. Live Countdown to Saturday, 5 December 2026 (09:00 SAST) ---
+        let countdownInterval;
+        function startCountdown() {
+            if (countdownInterval) return;
+            const targetDate = new Date('December 5, 2026 09:00:00 GMT+0200').getTime();
+
+            function updateTimer() {
+                const now = new Date().getTime();
+                const diff = targetDate - now;
+
+                if (diff <= 0) {
+                    document.getElementById('adv-days').textContent = '00';
+                    document.getElementById('adv-hours').textContent = '00';
+                    document.getElementById('adv-minutes').textContent = '00';
+                    document.getElementById('adv-seconds').textContent = '00';
+                    clearInterval(countdownInterval);
+                    return;
+                }
+
+                const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+                document.getElementById('adv-days').textContent = String(d).padStart(2, '0');
+                document.getElementById('adv-hours').textContent = String(h).padStart(2, '0');
+                document.getElementById('adv-minutes').textContent = String(m).padStart(2, '0');
+                document.getElementById('adv-seconds').textContent = String(s).padStart(2, '0');
+            }
+
+            updateTimer();
+            countdownInterval = setInterval(updateTimer, 1000);
+        }
+
+        // --- 5. Interactive Love Memory Match Game ---
+        const gameIcons = ['🌹', '💖', '✨', '🍷', '🌹', '💖', '✨', '🍷'];
         let flippedCards = [];
-        let matchedPairs = 0;
-        let lockBoard = false;
+        let matches = 0;
 
         function initGame() {
-            const gameBoard = document.getElementById('memory-game');
-            gameBoard.innerHTML = '';
-            matchedPairs = 0;
-            document.getElementById('match-count').textContent = matchedPairs;
+            const container = document.getElementById('memory-game');
+            const shuffled = [...gameIcons].sort(() => Math.random() - 0.5);
+            container.innerHTML = '';
+            matches = 0;
             flippedCards = [];
-            lockBoard = false;
+            document.getElementById('match-count').textContent = '0';
 
-            cardArray.sort(() => 0.5 - Math.random());
-
-            cardArray.forEach((symbol, index) => {
+            shuffled.forEach((icon, idx) => {
                 const card = document.createElement('div');
-                card.classList.add('h-20', 'bg-cream', 'border', 'border-stone-200', 'rounded-2xl', 'flex', 'items-center', 'justify-center', 'text-2xl', 'cursor-pointer', 'shadow-inner', 'transition-all', 'duration-300', 'hover:border-deep-rose');
-                card.dataset.symbol = symbol;
-                card.dataset.index = index;
-                card.addEventListener('click', flipCard);
-                gameBoard.appendChild(card);
+                card.className = 'memory-card';
+                card.dataset.icon = icon;
+                card.dataset.index = idx;
+                card.innerHTML = '❓';
+                card.onclick = () => onCardClick(card);
+                container.appendChild(card);
             });
         }
 
-        function flipCard() {
-            if (lockBoard) return;
-            if (this.classList.contains('matched') || this.classList.contains('flipped')) return;
+        function onCardClick(card) {
+            if (flippedCards.length < 2 && !card.classList.contains('flipped')) {
+                card.classList.add('flipped');
+                card.innerHTML = card.dataset.icon;
+                flippedCards.push(card);
 
-            this.textContent = this.dataset.symbol;
-            this.classList.add('bg-white', 'flipped', 'shadow-md');
-            flippedCards.push(this);
-
-            if (flippedCards.length === 2) {
-                checkMatch();
+                if (flippedCards.length === 2) {
+                    setTimeout(checkGameMatch, 500);
+                }
             }
         }
 
-        function checkMatch() {
-            const [card1, card2] = flippedCards;
-            const isMatch = card1.dataset.symbol === card2.dataset.symbol;
-
-            if (isMatch) {
-                card1.classList.add('matched', 'border-deep-rose');
-                card2.classList.add('matched', 'border-deep-rose');
-                matchedPairs++;
-                document.getElementById('match-count').textContent = matchedPairs;
-                flippedCards = [];
-
-                if (matchedPairs === emojis.length) {
-                    showModal("A Sweet Secret Unlocked", "You matched all our memories, Khanyisile! You make every single day of my life feel like poetry.");
+        function checkGameMatch() {
+            const [c1, c2] = flippedCards;
+            if (c1.dataset.icon === c2.dataset.icon) {
+                matches++;
+                document.getElementById('match-count').textContent = matches;
+                if (matches === 4) {
+                    showModal('Game Completed!', 'You matched all our memory notes! You are incredible, Khanyisile. ❤️');
                 }
             } else {
-                lockBoard = true;
-                setTimeout(() => {
-                    card1.textContent = '';
-                    card2.textContent = '';
-                    card1.classList.remove('bg-white', 'flipped', 'shadow-md');
-                    card2.classList.remove('bg-white', 'flipped', 'shadow-md');
-                    flippedCards = [];
-                    lockBoard = false;
-                }, 900);
+                c1.classList.remove('flipped');
+                c2.classList.remove('flipped');
+                c1.innerHTML = '❓';
+                c2.innerHTML = '❓';
             }
+            flippedCards = [];
         }
 
-        function showModal(title, message) {
+        function showModal(title, msg) {
             document.getElementById('modal-title').textContent = title;
-            document.getElementById('modal-message').textContent = message;
-            document.getElementById('modal').style.display = 'flex';
+            document.getElementById('modal-message').textContent = msg;
+            document.getElementById('modal').classList.remove('hidden');
         }
 
         function closeModal() {
-            document.getElementById('modal').style.display = 'none';
+            document.getElementById('modal').classList.add('hidden');
         }
 
-        // Initialize game on load
         initGame();
     </script>
 </body>
